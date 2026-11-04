@@ -1,0 +1,42 @@
+{
+  "assumptions_note": "All economic assumptions are ILLUSTRATIVE and editable in config (no real spend, no real conversion value).",
+  "data_fingerprint": "sha256:de6ce8def1a6 \u00b7 588,101 rows",
+  "headline": {
+    "breakeven_cpm": 7.747190157488119,
+    "breakeven_value_per_conversion": 32.269764252315426,
+    "cost_per_incremental_conversion": 32.269764252315426,
+    "cpm": 10.0,
+    "incremental_conversions_causal": 4342.982145893556,
+    "profitable_at_assumptions": false,
+    "roas": 0.7747190157488119,
+    "total_ad_impressions": 14014701,
+    "total_media_cost": 140147.01,
+    "value_of_incremental": 108574.5536473389,
+    "value_per_conversion": 25.0
+  },
+  "reallocation": {
+    "assumption": "ILLUSTRATIVE, not a causal promise. Holds total spend (impressions) constant. Relies on the receiving band's marginal payoff holding as volume increases \u2014 a STRONG assumption that is likely violated, because the 32+ band's efficiency is OBSERVATIONAL and ENDOGENOUS: high-exposure users are self-selected engaged users, not users you can manufacture by buying more impressions. The realistic gain is probably much smaller; treat the optimistic figure as an upper-bound sketch and the conservative figure as the more defensible number.",
+    "conversions_gained_at_dest": 56.53562698110933,
+    "conversions_removed_at_source": -26.12799854615943,
+    "dest_band": "32+",
+    "dest_efficiency_per_1k": 0.45952342890092196,
+    "impressions_moved": 123031.0,
+    "net_conversion_change_conservative": 56.53562698110933,
+    "net_conversion_change_optimistic": 82.66362552726876,
+    "net_value_change_conservative": 1413.3906745277334,
+    "net_value_change_optimistic": 2066.590638181719,
+    "reallocation_share": 0.25,
+    "source_abs_diff_pp": -0.11471472151629719,
+    "source_ad_impressions": 492124,
+    "source_band": "4-7",
+    "source_ci_high_pp": 0.10079323276113317,
+    "source_ci_low_pp": -0.33022267579372755,
+    "source_efficiency_per_1k": -0.21236922845591297,
+    "source_not_significant_note": "The source band (4-7) negative marginal payoff is NOT statistically distinguishable from zero (BH-adjusted p=0.7146188896033411, 95% CI -0.33022267579372755..0.10079323276113317 pp includes 0). So the ~26 conversions the optimistic variant credits to 'removing impressions from the source' treat noise as signal; the realistic source effect could be zero or positive. Prefer the CONSERVATIVE variant (source efficiency = 0).",
+    "source_p_bh": 0.7146188896033411,
+    "source_p_raw": 0.23820629653444703,
+    "source_significant_bh": false,
+    "value_per_conversion": 25.0,
+    "winners_curse_note": "Picking the single most-negative band among several non-significant mid bands biases the chosen source efficiency downward (a winner's curse / selection effect), further inflating the optimistic net."
+  }
+}

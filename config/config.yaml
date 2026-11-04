@@ -1,0 +1,79 @@
+# Campaign_AB_Test_Audit — central configuration
+# All tunables and paths live here. No credentials. Paths are RELATIVE to the
+# project root and resolved to absolute paths by src.common.load_config().
+
+project:
+  name: Campaign_AB_Test_Audit
+  random_seed: 42
+
+# --- file system paths (relative to project root) ---
+paths:
+  data_raw: data/raw/marketing_AB.csv
+  outputs_dir: outputs
+  charts_dir: outputs/charts
+  excel_report: outputs/Campaign_Test_Report.xlsx
+  dashboard_html: outputs/dashboard.html
+  dashboard_screenshot: outputs/dashboard_screenshot.png
+  docs_dir: docs
+
+# --- data source / schema ---
+data:
+  kaggle_dataset: faviovaz/marketing-ab-testing
+  kaggle_url: https://www.kaggle.com/datasets/faviovaz/marketing-ab-testing
+  # Expected LOGICAL schema (loader is tolerant of real header spelling):
+  #   user_id       - unique user id
+  #   test_group    - 'ad' (treatment) or 'psa' (control)
+  #   converted     - bool
+  #   total_ads     - int (number of ads seen)
+  #   most_ads_day  - day of week of peak exposure
+  #   most_ads_hour - hour of day (0-23) of peak exposure
+  treatment_label: ad
+  control_label: psa
+  # Provenance (documented in docs/data_sources.md). License could NOT be confirmed
+  # programmatically from the Kaggle page (JS-rendered); treat as UNCONFIRMED and do
+  # not redistribute the raw CSV. Edit if the true license is verified on the page.
+  license: "Unconfirmed (not machine-readable from the Kaggle dataset page)"
+  date_accessed: "2026-11-04"
+
+# --- profiling / data-quality thresholds ---
+profiling:
+  # Percentile above which `total ads` values are flagged as high-exposure outliers.
+  outlier_percentile: 99
+
+# --- test-validity settings ---
+validity:
+  # ASSUMPTION: the dataset does NOT state its intended design split. Ad-tech
+  # holdouts are commonly ~95/5 or 96/4. We test the Sample Ratio Mismatch (SRM)
+  # chi-square against this assumed control share and report the OBSERVED share
+  # plainly. Edit this to match the true design if it becomes known.
+  intended_control_share: 0.04   # => intended 0.96 ad / 0.04 psa
+  significance_alpha: 0.05
+  # Alternative design used only for the SRM sensitivity note (transparency): the
+  # same observed counts tested against this control share to show assumption dependence.
+  sensitivity_control_share: 0.05
+
+# --- exposure-band analysis ---
+exposure:
+  # Defensible left-closed bin edges for `total ads`. With edges
+  # [1, 2, 4, 8, 16, 32] the bands are: 1 / 2-3 / 4-7 / 8-15 / 16-31 / 32+.
+  # DOCUMENTED ASSUMPTION: to be finalized from the real distribution in M3.
+  band_edges: [1, 2, 4, 8, 16, 32]
+
+# --- effect analysis ---
+analysis:
+  # A band is flagged statistically unreliable if its control (psa) group has fewer
+  # than min_control_per_band users OR fewer than min_control_conversions_per_band
+  # conversions (a small conversion numerator -> noisy control rate + wide CI).
+  # Documented in M5.
+  min_control_per_band: 100
+  min_control_conversions_per_band: 10
+
+# --- economics (ILLUSTRATIVE, editable — not real spend) ---
+economics:
+  cpm: 10.0                 # illustrative cost per 1000 impressions (USD)
+  value_per_conversion: 25.0  # illustrative value of one conversion (USD)
+  reallocation_share: 0.25    # share of least-efficient-band impressions to move
+
+# --- logging ---
+logging:
+  level: INFO

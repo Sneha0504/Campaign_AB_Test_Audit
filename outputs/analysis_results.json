@@ -1,0 +1,441 @@
+{
+  "data_fingerprint": "sha256:de6ce8def1a6 \u00b7 588,101 rows",
+  "exposure": {
+    "alpha": 0.05,
+    "band_edges": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32
+    ],
+    "band_labels": [
+      "1",
+      "2-3",
+      "4-7",
+      "8-15",
+      "16-31",
+      "32+"
+    ],
+    "bands": [
+      {
+        "abs_diff_pp": 0.028402538580819772,
+        "ad_impressions": 54298,
+        "band": "1",
+        "ci_high_pp": 0.17915097680116404,
+        "ci_low_pp": -0.12234589963952451,
+        "conv_ad": 86,
+        "conv_psa": 3,
+        "impressions_share": 0.0038743602164612715,
+        "incremental_conversions": 15.42201039861352,
+        "incremental_share": 0.003719934707983656,
+        "n_ad": 54298,
+        "n_psa": 2308,
+        "p_bh": 0.9450596963696644,
+        "p_raw": 0.7358923310449781,
+        "psa_reliable": false,
+        "rate_ad": 0.0015838520755828945,
+        "rate_psa": 0.0012998266897746968,
+        "significant_bh": false,
+        "significant_raw": false,
+        "z": 0.3372979153346193
+      },
+      {
+        "abs_diff_pp": 0.0420637688320688,
+        "ad_impressions": 157806,
+        "band": "2-3",
+        "ci_high_pp": 0.2061716420875939,
+        "ci_low_pp": -0.12204410442345628,
+        "conv_ad": 168,
+        "conv_psa": 7,
+        "impressions_share": 0.011260033303600269,
+        "incremental_conversions": 27.44198214835336,
+        "incremental_share": 0.006619265530952115,
+        "n_ad": 65239,
+        "n_psa": 3249,
+        "p_bh": 0.9450596963696644,
+        "p_raw": 0.6429880523594912,
+        "psa_reliable": false,
+        "rate_ad": 0.0025751467680375237,
+        "rate_psa": 0.0021545090797168358,
+        "significant_bh": false,
+        "significant_raw": false,
+        "z": 0.46352506566334206
+      },
+      {
+        "abs_diff_pp": -0.11471472151629719,
+        "ad_impressions": 492124,
+        "band": "4-7",
+        "ci_high_pp": 0.10079323276113317,
+        "ci_low_pp": -0.33022267579372755,
+        "conv_ad": 337,
+        "conv_psa": 20,
+        "impressions_share": 0.035114841194257375,
+        "incremental_conversions": -104.51199418463771,
+        "incremental_share": -0.02520928105475613,
+        "n_ad": 91106,
+        "n_psa": 4127,
+        "p_bh": 0.7146188896033411,
+        "p_raw": 0.23820629653444703,
+        "psa_reliable": true,
+        "rate_ad": 0.003698987992009308,
+        "rate_psa": 0.00484613520717228,
+        "significant_bh": false,
+        "significant_raw": false,
+        "z": -1.17948200888449
+      },
+      {
+        "abs_diff_pp": -0.009427763551083865,
+        "ad_impressions": 1222346,
+        "band": "8-15",
+        "ci_high_pp": 0.2604177010025757,
+        "ci_low_pp": -0.2792732281047434,
+        "conv_ad": 720,
+        "conv_psa": 26,
+        "impressions_share": 0.08721884255682658,
+        "incremental_conversions": -9.93874833555261,
+        "incremental_share": -0.00239732005955986,
+        "n_ad": 105420,
+        "n_psa": 3755,
+        "p_bh": 0.9450596963696644,
+        "p_raw": 0.9450596963696645,
+        "psa_reliable": true,
+        "rate_ad": 0.006829823562891292,
+        "rate_psa": 0.006924101198402131,
+        "significant_bh": false,
+        "significant_raw": false,
+        "z": -0.06891196261256545
+      },
+      {
+        "abs_diff_pp": -0.03991983533744997,
+        "ad_impressions": 2799746,
+        "band": "16-31",
+        "ci_high_pp": 0.2990221847426515,
+        "ci_low_pp": -0.37886185541755146,
+        "conv_ad": 1848,
+        "conv_psa": 76,
+        "impressions_share": 0.19977208218712622,
+        "incremental_conversions": -50.86745098039225,
+        "incremental_share": -0.01226971007785276,
+        "n_ad": 127424,
+        "n_psa": 5100,
+        "p_bh": 0.9450596963696644,
+        "p_raw": 0.8152120890030878,
+        "psa_reliable": true,
+        "rate_ad": 0.014502762430939226,
+        "rate_psa": 0.014901960784313726,
+        "significant_bh": false,
+        "significant_raw": false,
+        "z": -0.2337074688610596
+      },
+      {
+        "abs_diff_pp": 3.5248399422398005,
+        "ad_impressions": 9288381,
+        "band": "32+",
+        "ci_high_pp": 4.192857543370536,
+        "ci_low_pp": 2.856822341109065,
+        "conv_ad": 11264,
+        "conv_psa": 288,
+        "impressions_share": 0.6627598405417283,
+        "incremental_conversions": 4268.228686058174,
+        "incremental_share": 1.029537110953233,
+        "n_ad": 121090,
+        "n_psa": 4985,
+        "p_bh": 1.6879730063172494e-16,
+        "p_raw": 2.813288343862082e-17,
+        "psa_reliable": true,
+        "rate_ad": 0.09302171938227764,
+        "rate_psa": 0.05777331995987964,
+        "significant_bh": true,
+        "significant_raw": true,
+        "z": 8.454066550478943
+      }
+    ],
+    "binning": "right-open [lo, hi); last band is [last_edge, inf)",
+    "control": "psa",
+    "min_control_conversions_per_band": 10,
+    "min_control_per_band": 100,
+    "n_unbinned": 0,
+    "total_ad_impressions": 14014701,
+    "total_incremental_conversions": 4145.774485104559,
+    "treatment": "ad"
+  },
+  "overall": {
+    "abs_diff_pp": 0.7692453192201517,
+    "alpha": 0.05,
+    "causal_note": "This randomized ad-vs-psa contrast is the ONLY causal estimate in this analysis. Exposure-band and timing breakdowns below are observational.",
+    "chi2": 54.318051591383124,
+    "chi2_p": 1.7052807161560136e-13,
+    "ci_high_pp": 0.9433973952792027,
+    "ci_low_pp": 0.5950932431611006,
+    "control": "psa",
+    "conv_ad": 14423,
+    "conv_psa": 420,
+    "n_ad": 564577,
+    "n_psa": 23524,
+    "p_value": 1.7052807161559714e-13,
+    "rate_ad": 0.025546559636683747,
+    "rate_psa": 0.01785410644448223,
+    "relative_lift_pct": 43.085064022225836,
+    "treatment": "ad",
+    "z": 7.3700781265454145
+  },
+  "timing": {
+    "by_day": [
+      {
+        "gap": 0.01068265813039988,
+        "key": "Monday",
+        "n_ad": 83571,
+        "n_psa": 3502,
+        "rate_ad": 0.033241196108697996,
+        "rate_psa": 0.022558537978298116
+      },
+      {
+        "gap": 0.015992495350280182,
+        "key": "Tuesday",
+        "n_ad": 74572,
+        "n_psa": 2907,
+        "rate_ad": 0.03044037976720485,
+        "rate_psa": 0.014447884416924664
+      },
+      {
+        "gap": 0.00959654807330666,
+        "key": "Wednesday",
+        "n_ad": 77418,
+        "n_psa": 3490,
+        "rate_ad": 0.025355860394223564,
+        "rate_psa": 0.015759312320916905
+      },
+      {
+        "gap": 0.0014066647336733323,
+        "key": "Thursday",
+        "n_ad": 79077,
+        "n_psa": 3905,
+        "rate_ad": 0.021637138485273846,
+        "rate_psa": 0.020230473751600513
+      },
+      {
+        "gap": 0.006162032549430728,
+        "key": "Friday",
+        "n_ad": 88805,
+        "n_psa": 3803,
+        "rate_ad": 0.022464951297787288,
+        "rate_psa": 0.01630291874835656
+      },
+      {
+        "gap": 0.007310764563580343,
+        "key": "Saturday",
+        "n_ad": 78802,
+        "n_psa": 2858,
+        "rate_ad": 0.021306565823202457,
+        "rate_psa": 0.013995801259622114
+      },
+      {
+        "gap": 0.004024866225054536,
+        "key": "Sunday",
+        "n_ad": 82332,
+        "n_psa": 3059,
+        "rate_ad": 0.024619831900111744,
+        "rate_psa": 0.020594965675057208
+      }
+    ],
+    "by_hour": [
+      {
+        "gap": 0.019212657750988887,
+        "key": "0",
+        "n_ad": 5309,
+        "n_psa": 227,
+        "rate_ad": 0.019212657750988887,
+        "rate_psa": 0.0
+      },
+      {
+        "gap": 0.013434452871072589,
+        "key": "1",
+        "n_ad": 4615,
+        "n_psa": 187,
+        "rate_ad": 0.013434452871072589,
+        "rate_psa": 0.0
+      },
+      {
+        "gap": 0.007569875776397516,
+        "key": "2",
+        "n_ad": 5152,
+        "n_psa": 181,
+        "rate_ad": 0.007569875776397516,
+        "rate_psa": 0.0
+      },
+      {
+        "gap": -0.0008112446314693499,
+        "key": "3",
+        "n_ad": 2590,
+        "n_psa": 89,
+        "rate_ad": 0.010424710424710425,
+        "rate_psa": 0.011235955056179775
+      },
+      {
+        "gap": 0.01585014409221902,
+        "key": "4",
+        "n_ad": 694,
+        "n_psa": 28,
+        "rate_ad": 0.01585014409221902,
+        "rate_psa": 0.0
+      },
+      {
+        "gap": 0.0215633423180593,
+        "key": "5",
+        "n_ad": 742,
+        "n_psa": 23,
+        "rate_ad": 0.0215633423180593,
+        "rate_psa": 0.0
+      },
+      {
+        "gap": 0.023173803526448364,
+        "key": "6",
+        "n_ad": 1985,
+        "n_psa": 83,
+        "rate_ad": 0.023173803526448364,
+        "rate_psa": 0.0
+      },
+      {
+        "gap": 0.010043671706972698,
+        "key": "7",
+        "n_ad": 6168,
+        "n_psa": 237,
+        "rate_ad": 0.01848249027237354,
+        "rate_psa": 0.008438818565400843
+      },
+      {
+        "gap": 0.00923875988292521,
+        "key": "8",
+        "n_ad": 16968,
+        "n_psa": 659,
+        "rate_ad": 0.01986091466289486,
+        "rate_psa": 0.010622154779969651
+      },
+      {
+        "gap": 0.008713582858178453,
+        "key": "9",
+        "n_ad": 29802,
+        "n_psa": 1202,
+        "rate_ad": 0.019528890678477955,
+        "rate_psa": 0.010815307820299502
+      },
+      {
+        "gap": 0.008372110417285835,
+        "key": "10",
+        "n_ad": 37454,
+        "n_psa": 1485,
+        "rate_ad": 0.021840123885299302,
+        "rate_psa": 0.013468013468013467
+      },
+      {
+        "gap": 0.007913324347618258,
+        "key": "11",
+        "n_ad": 44149,
+        "n_psa": 2061,
+        "rate_ad": 0.022469365104532377,
+        "rate_psa": 0.01455604075691412
+      },
+      {
+        "gap": 0.007148706925228683,
+        "key": "12",
+        "n_ad": 45238,
+        "n_psa": 2060,
+        "rate_ad": 0.024138998187364605,
+        "rate_psa": 0.01699029126213592
+      },
+      {
+        "gap": 0.008473345899721839,
+        "key": "13",
+        "n_ad": 45485,
+        "n_psa": 2170,
+        "rate_ad": 0.025063207650873914,
+        "rate_psa": 0.016589861751152075
+      },
+      {
+        "gap": 0.012523979977207129,
+        "key": "14",
+        "n_ad": 43779,
+        "n_psa": 1869,
+        "rate_ad": 0.028575344343178235,
+        "rate_psa": 0.016051364365971106
+      },
+      {
+        "gap": 0.004680711789054076,
+        "key": "15",
+        "n_ad": 42855,
+        "n_psa": 1828,
+        "rate_ad": 0.029844825574612065,
+        "rate_psa": 0.02516411378555799
+      },
+      {
+        "gap": 0.0028379992653851834,
+        "key": "16",
+        "n_ad": 35963,
+        "n_psa": 1604,
+        "rate_ad": 0.030892862108277953,
+        "rate_psa": 0.02805486284289277
+      },
+      {
+        "gap": 0.00829157765512591,
+        "key": "17",
+        "n_ad": 33605,
+        "n_psa": 1383,
+        "rate_ad": 0.02853742002678173,
+        "rate_psa": 0.02024584237165582
+      },
+      {
+        "gap": 0.002293024274501905,
+        "key": "18",
+        "n_ad": 31052,
+        "n_psa": 1271,
+        "rate_ad": 0.02747005023830993,
+        "rate_psa": 0.025177025963808025
+      },
+      {
+        "gap": 0.0022953362378516085,
+        "key": "19",
+        "n_ad": 29169,
+        "n_psa": 1183,
+        "rate_ad": 0.026809283828722275,
+        "rate_psa": 0.024513947590870666
+      },
+      {
+        "gap": 0.012632050891923086,
+        "key": "20",
+        "n_ad": 27846,
+        "n_psa": 1077,
+        "rate_ad": 0.030273647920706744,
+        "rate_psa": 0.017641597028783658
+      },
+      {
+        "gap": 0.006972932556375367,
+        "key": "21",
+        "n_ad": 28895,
+        "n_psa": 1081,
+        "rate_ad": 0.029174597681259733,
+        "rate_psa": 0.022201665124884366
+      },
+      {
+        "gap": 0.010097338341613148,
+        "key": "22",
+        "n_ad": 25515,
+        "n_psa": 917,
+        "rate_ad": 0.026455026455026454,
+        "rate_psa": 0.016357688113413305
+      },
+      {
+        "gap": 0.010046205686422675,
+        "key": "23",
+        "n_ad": 19547,
+        "n_psa": 619,
+        "rate_ad": 0.02297027676881363,
+        "rate_psa": 0.012924071082390954
+      }
+    ],
+    "control": "psa",
+    "note": "Cross-sectional day-of-week / hour-of-day pattern, NOT a temporal drift test \u2014 this dataset has no calendar/time axis (see validity_report.md).",
+    "treatment": "ad"
+  }
+}

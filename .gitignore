@@ -1,0 +1,32 @@
+# --- raw data (never committed) ---
+data/raw/*
+!data/raw/.gitkeep
+
+# --- virtual environments ---
+.venv/
+venv/
+
+# --- python caches ---
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.ruff_cache/
+
+# --- os / editor cruft ---
+.DS_Store
+
+# --- transient outputs & logs ---
+outputs/*.tmp
+*.log
+logs/
+
+# --- committed deliverables (explicitly KEPT, listed here as documentation) ---
+# The following are tracked on purpose; do NOT ignore them:
+#   outputs/Campaign_Test_Report.xlsx
+#   outputs/dashboard.html
+#   outputs/dashboard_screenshot.png
+#   outputs/charts/*
+#   data/raw/.gitkeep
+#   outputs/.gitkeep
+#   outputs/charts/.gitkeep
